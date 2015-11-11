@@ -15,7 +15,7 @@ var destinations    = {
 // Sass Task
 gulp.task('sass',function() {
 
-    gulp.src(watchableFiles.scss)
+    gulp.src(watchableFiles.sass)
     	.pipe(sass().on('error', sass.logError))
     	.pipe(gulp.dest(destinations.sass));
    
